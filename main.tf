@@ -245,7 +245,7 @@ resource "aws_instance" "cloudpulse" {
 
   user_data = <<-EOF
     #!/bin/bash
-    exec > >(tee /var/log/user-data.log|logger -t user-data -s 2>/dev/console) 2>&1
+    exec >>(tee /var/log/user-data.log|logger -t user-data -s 2>/dev/console) 2>&1
 
     # 1. Install App dependencies
     yum update -y
