@@ -1,8 +1,8 @@
 terraform {
   backend "s3" {
-    bucket  = "ionut-bucket-lll"
+    bucket  = "ionut-bucket-cloud"
     key     = "terraform.tfstate"
-    region  = "eu-west-1"
+    region  = "eu-north-1"
     encrypt = true
   }
 }
