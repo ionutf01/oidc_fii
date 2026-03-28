@@ -369,7 +369,7 @@ resource "aws_instance" "observability" {
   subnet_id              = aws_subnet.public.id
   vpc_security_group_ids = [aws_security_group.cloudpulse_sg.id]
   private_ip             = "10.0.0.20"
-  iam_instance_profile        = aws_iam_instance_profile.cloudpulse.name
+  iam_instance_profile   = aws_iam_instance_profile.cloudpulse.name
 
   user_data_replace_on_change = true
 
