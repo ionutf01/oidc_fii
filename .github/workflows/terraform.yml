@@ -62,7 +62,7 @@ jobs:
 
       # - name: Terraform Destroy
       #   run: terraform destroy -auto-approve
-
+#nimic
       # - name: 📝 Post Deployment Summary
       #   if: success()
       #   run: |
